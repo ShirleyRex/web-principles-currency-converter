@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="text-center">Currency Converter</h1>
+      <p class="text-center mb-20">Get the most accurate exchange rates in an instant</p>
+      </div>
+      
+      <div class="currency-box">
+        <div class="d-flex justify-between">
+          <select id="sourceCurrency" name="currency" class="currency mt-15"></select>
+          <div>
+            <span class="text-right justify-between d-block description"
+              >You're converting</span
+            >
+            <input
+              class="currency-input text-right"
+              placeholder="0.00"
+              value="1"
+              type="number"
+              id="sourceInput"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="conversion-details my-20">
+        <p class="text-right" id="conversionRate"></p>
+        <p class="text-right" id="timeStamp"></p>
+      </div>
+      <div class="currency-box">
+        <div class="d-flex justify-between">
+          <select id="destinationCurrency" class="currency mt-15"></select>
+          <div>
+            <span class="text-right justify-between d-block description"
+              >To</span
+            >
+            <input
+              class="currency-input text-right"
+              placeholder="0.00"
+              type="number"
+              id="destinationInput"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button class="btn mt-20" id="btn">Convert</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

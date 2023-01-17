@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 450px;
+}
+
+h1,p {
+  color: #364547;
+}
+
+select {
+  width: 95%;
+  height: 40px;
+  font-size: 1em;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  margin: 0.2em 0;
+  padding: 0 1em;
+  border-radius: 10px;
+  border: none;
+}
+input {
+  width: 95%;
+  height: 40px;
+  font-size: 1em;
+  margin: 0.2em 0;
+  border-radius: 10px;
+  border: none;
+  background: #edeef7;
+  outline: none;
+  padding: 0 1em;
+}
+.btn {
+  width: 100%;
+  height: 40px;
+  background: #ffa500;
+  color: white;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+
+.currency-box {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  padding: 8px;
+}
+
+.currency {
+  color: #ffa500;
+  width: 92px;
+  border-radius: 22px;
+  background-color: #fbf7f2;
+  border: 1px solid #ffa500;
+}
+
+.currency-input {
+  width: 220px;
+  font-size: 28px;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffa500;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 15px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.my-20 {
+    margin: 20px 0 20px 0;
+}
+
+@media (max-width: 426px) {
+h1 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.header {
+  width: calc(100% - 40px);
+}
+
+.conversion-details {
+  width: calc(100% - 40px);
+}
+
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .currency-input {
+    width: 110px;
+  }
+
+  .currency-box {
+    width: calc(100% - 40px);
+  }
+
+  .btn {
+    width: calc(100% - 40px);
+  }
+
+  span {
+    width: 110px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+}
